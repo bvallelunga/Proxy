@@ -1,0 +1,24 @@
+{
+  "domain": "vallelungabrian.com",
+  "host": "127.0.0.1",
+	"port": 80,
+	"proxy_table":{},
+	"forever": {
+		"uid": "easybin",
+		"silent": false,
+		"watch": true,
+		"watch_directory": "./",
+		"watch_ignore_dot": true,
+		"watch_ignore_patterns": [
+			"config.tmp.json",
+			"node_modules/**",
+			"logs/**",
+			"**.log",
+			".*/**",
+			".*"
+		],
+		"max_failures": 1000,
+		"output_log": "logs/server.out",
+		"error_log": "logs/server.error"
+	}
+}
